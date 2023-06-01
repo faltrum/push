@@ -6,7 +6,7 @@
 #    By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/04 11:03:43 by oseivane          #+#    #+#              #
-#    Updated: 2023/06/01 12:07:02 by oseivane         ###   ########.fr        #
+#    Updated: 2023/06/01 12:48:03 by oseivane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRC = 	push_swap \
 		ft_add_node_back \
 		ft_display_info \
 		ft_last_node \
+		ft_first_node \
 		ft_new_node \
 		ft_check_error \
 		ft_swap

@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 10:23:02 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/01 11:15:48 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/01 12:50:17 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ int		ft_check_isalpha(char *argv);
 int		ft_check_error(char **argv);
 int		ft_check_error2(char **strarg);
 t_elem	*ft_new_node(int num);
-t_elem	*ft_last_node(t_elem *elem);
+t_elem	*ft_first_node(t_elem *node);
+t_elem	*ft_last_node(t_elem *node);
 void	ft_add_node_back(t_elem **elem, t_elem *new);
 void	ft_error(void);
 void	ft_op_s(int *num1, int *num2);
