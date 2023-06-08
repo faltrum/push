@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 11:03:55 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/01 12:12:15 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/08 14:14:02 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	main(int argc, char **argv)
 	t_elem	*stack_b;
 	t_elem	*new_node;
 	t_elem	*tmp;
+	t_elem	*last;
 	int		num;
 	char	**strarg;
 
@@ -60,30 +61,17 @@ int	main(int argc, char **argv)
 			i++;
 		}
 	}
-	t_elem *last  = ft_last_node(stack_a);
+
+	last = ft_last_node(stack_a);
 	stack_a->prev = last;
 	last->next = stack_a;
-	tmp = stack_a;
-	printf("\n\n\n");
-	printf("Lista circular doblemente enlazada Creada\n\n");
-	while (tmp)
-	{
-		if (tmp->prev)
-			printf("el previous es: %d\n", tmp->prev->num);
-		else
-			printf("no hay prev: NULL\n");
-		printf("num: %d\n", tmp->num);
-		if (tmp->next)
-			printf("el next es: %d\n\n", tmp->next->num);
-		else
-			printf("no hay next: NULL\n\n");
-		if (tmp == last)
-			break;
-		tmp = tmp->next;
-	}
 	printf("Empieza las operaciones en los Stacks\n");
-	ft_op_sa(stack_a, argc);
-	ft_op_pb(stack_b, stack_a);
+	//ft_op_sa(stack_a, argc);
+	//ft_op_pb(stack_b, stack_a);
 	//ft_op_sb(stack_b, argc);
 	//ft_op_ss(stack_a, stack_b, argc);
+	//ft_op_ra(&stack_a, argc);
+	//ft_op_rra(&stack_a, argc);
+	ft_push_b(&stack_a, &stack_b);
+	
 }

@@ -6,7 +6,7 @@
 #    By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/04 11:03:43 by oseivane          #+#    #+#              #
-#    Updated: 2023/06/01 12:48:03 by oseivane         ###   ########.fr        #
+#    Updated: 2023/06/08 14:10:12 by oseivane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,12 +36,16 @@ OBJF = .cache_exists
 
 SRC = 	push_swap \
 		ft_add_node_back \
+		ft_add_node_front \
 		ft_display_info \
 		ft_last_node \
 		ft_first_node \
 		ft_new_node \
 		ft_check_error \
-		ft_swap
+		ft_swap \
+		ft_push \
+		ft_rotate \
+		ft_reverse
 
 SOURCES = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC)))
 
