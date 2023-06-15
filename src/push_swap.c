@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 11:03:55 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/08 14:14:02 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/15 13:34:57 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,21 @@ int	main(int argc, char **argv)
 	last->next = stack_a;
 	printf("Empieza las operaciones en los Stacks\n");
 	//ft_op_sa(stack_a, argc);
-	//ft_op_pb(stack_b, stack_a);
+	ft_op_pb(&stack_a, &stack_b);
+	ft_op_pb(&stack_a, &stack_b);
+	ft_op_pb(&stack_a, &stack_b);
+	ft_op_pb(&stack_a, &stack_b);
+	ft_op_pb(&stack_a, &stack_b);
+
+	printf("stack a: \n");
+	ft_print_stack(stack_a);
+	printf("fin stac a: \n\n\n");
+	printf("stack b: \n");
+	ft_print_stack(stack_b);
+	printf("fin stac b: \n");
 	//ft_op_sb(stack_b, argc);
 	//ft_op_ss(stack_a, stack_b, argc);
 	//ft_op_ra(&stack_a, argc);
 	//ft_op_rra(&stack_a, argc);
-	ft_push_b(&stack_a, &stack_b);
-	
+	//ft_push_b(&stack_a, &stack_b);
 }

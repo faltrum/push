@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 13:12:31 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/08 13:44:42 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/15 11:13:24 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_add_node_back(t_elem **lst, t_elem *new)
 {
-	t_elem	*temp;
+	t_elem	*tmp;
 
 	if (lst != NULL)
 	{
@@ -25,9 +25,9 @@ void	ft_add_node_back(t_elem **lst, t_elem *new)
 		}
 		else
 		{
-			temp = ft_last_node(*lst);
-			temp->next = new;
-			temp->next->prev = temp;
+			tmp = ft_last_node(*lst);
+			tmp->next = new;
+			tmp->next->prev = tmp;
 		}
 	}
 }

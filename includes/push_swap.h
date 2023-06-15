@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 10:23:02 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/08 14:08:47 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/15 11:00:46 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_op_s(int *num1, int *num2);
 void	ft_op_sa(t_elem *stack_a, int argc);
 void	ft_op_sb(t_elem *stack_b, int argc);
 void	ft_op_ss(t_elem *stack_a, t_elem *stack_b, int argc);
-void	ft_push_b(t_elem **stack_a, t_elem **stack_b);
+void	ft_op_pb(t_elem **stack_a, t_elem **stack_b);
 void	ft_op_ra(t_elem **stack_a, int argc);
 void	ft_op_rb(t_elem **stack_b, int argc);
 void	ft_op_rr(t_elem **stack_a, t_elem **stack_b, int argc);
