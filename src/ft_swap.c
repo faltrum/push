@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 11:30:39 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/08 13:49:55 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/22 13:40:41 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	ft_op_sa(t_elem *stack_a, int argc)
 	if (argc >= 2)
 	{
 		ft_op_s(&stack_a->num, &stack_a->next->num);
+		printf("prueba error: primmer: %d next: %d prev: %d\n", stack_a->num, stack_a->next->num, stack_a->prev->num);
 		write (1, "sa\n", 3);
 	}
 }

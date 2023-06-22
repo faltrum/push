@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 10:23:02 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/15 11:00:46 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/22 13:19:00 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,11 @@ void	ft_op_rr(t_elem **stack_a, t_elem **stack_b, int argc);
 void	ft_op_rra(t_elem **stack_a, int argc);
 void	ft_op_rrb(t_elem **stack_b, int argc);
 void	ft_op_rrr(t_elem **stack_a, t_elem **stack_b, int argc);
+int		ft_stack_l(t_elem *stack);
+void	ft_sort_2(t_elem *stack_a, int argc);
+void	ft_sort_3(t_elem *stack_a, int argc);
+void	ft_sort_stack(t_elem *stack, int argc);
+
 
 
 #endif

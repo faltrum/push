@@ -6,7 +6,7 @@
 /*   By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 11:03:55 by oseivane          #+#    #+#             */
-/*   Updated: 2023/06/15 13:34:57 by oseivane         ###   ########.fr       */
+/*   Updated: 2023/06/22 12:09:49 by oseivane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,9 @@ int	main(int argc, char **argv)
 	last = ft_last_node(stack_a);
 	stack_a->prev = last;
 	last->next = stack_a;
-	printf("Empieza las operaciones en los Stacks\n");
+	printf("Empieza ordenacion en los Stacks\n");
+	ft_sort_stack(stack_a, argc);
+	/*printf("Empieza las operaciones en los Stacks\n");
 	//ft_op_sa(stack_a, argc);
 	ft_op_pb(&stack_a, &stack_b);
 	ft_op_pb(&stack_a, &stack_b);
@@ -83,5 +85,5 @@ int	main(int argc, char **argv)
 	//ft_op_ss(stack_a, stack_b, argc);
 	//ft_op_ra(&stack_a, argc);
 	//ft_op_rra(&stack_a, argc);
-	//ft_push_b(&stack_a, &stack_b);
+	//ft_push_b(&stack_a, &stack_b);*/
 }

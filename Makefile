@@ -6,13 +6,15 @@
 #    By: oseivane <oseivane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/04 11:03:43 by oseivane          #+#    #+#              #
-#    Updated: 2023/06/15 10:16:30 by oseivane         ###   ########.fr        #
+#    Updated: 2023/06/22 13:18:27 by oseivane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
 INCLUDES = -I./includes
+
+SORTING_DIR = sorting/
 
 SRC_DIR = src/
 
@@ -45,7 +47,11 @@ SRC = 	push_swap \
 		ft_swap \
 		ft_push \
 		ft_rotate \
-		ft_reverse
+		ft_reverse \
+		ft_stack_l \
+		$(SORTING_DIR)ft_sort_2 \
+		$(SORTING_DIR)ft_sort_3 \
+		$(SORTING_DIR)ft_sort_stack \
 
 SOURCES = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC)))
 
